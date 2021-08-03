@@ -19,7 +19,7 @@ export function NewTranscationModal({ isOpen, onRequestClose }: NewTranscationMo
   const [category, setCategory] = useState('')
   const [type, setType] = useState('deposit')
 
-  function handleCreateNewTransacation(event: FormEvent) {
+  function handleCreateNewTransactions(event: FormEvent) {
     event.preventDefault();
 
     const data = {
@@ -46,7 +46,7 @@ export function NewTranscationModal({ isOpen, onRequestClose }: NewTranscationMo
       >
         <img src={closeImg} alt="Fechar modal" />
       </button>
-      <Container onSubmit={handleCreateNewTransacation}>
+      <Container onSubmit={handleCreateNewTransactions}>
         <h2>Cadastrar Transação</h2>
         <input
           type="text"
